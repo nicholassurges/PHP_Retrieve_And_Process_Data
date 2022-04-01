@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pizza</title>
+<style>
+.main{
+border: 3px solid navy;
+width: max-content;
+padding: 15px;
+width:460px;
+}
+td{
+padding-right: 45px;
+padding-bottom: 20px;
+}
+</style>
+</head>
+<body>
+<div class="main">
+<p>Build your pizza by selecting from the ingredients below</p>
+<form action="process.php" method="post">
+<fieldset>
+<table>
+<tr>
+<td>Customer Name:</td>
+<td>
+<input type="text" name="user">
+</td>
+</tr>
+<tr>
+<td>Order Type</td>
+<td>
+<select name="order_type">
+<option value="Carry Out">Carry Out</option>
+<option value="Delivery">Delivery</option>
+<option value="Dine In">Dine In</option>
+</select>
+</td>
+</tr>
+</table>
+</fieldset>
+<fieldset>
+<br>Toppings <br>
+<input type="checkbox" name="toppings[]" value='Pepperoni' checked> Pepperoni<br>
+<input type="checkbox" name="toppings[]" value='Mushrooms'> Mushrooms<br>
+<input type="checkbox" name="toppings[]" value='Olives'> Olives<br>
+</fieldset>
+<fieldset>
+<br>Size<br>
+<input type="radio" name="size" value="Small">Small<br>
+<input type="radio" name="size" value="Medium">Medium<br>
+<input type="radio" name="size" value="Large">Large<br>
+<input type="submit" name="submit" value="Submit Query">
+</fieldset>
+</form>
+</div>
+</body>
+</html>

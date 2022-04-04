@@ -1,4 +1,5 @@
-# PhpProject4
+# PHP_Retrieve_And_Process_Data
+
 
 An html file (the form) to collect user data 
 A PHP file to process it. Use the Post method 
